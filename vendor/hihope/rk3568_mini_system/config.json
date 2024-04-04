@@ -1,0 +1,57 @@
+{
+  "product_name": "rk3568_mini_system",
+  "device_company": "rockchip",
+  "device_build_path": "device/board/hihope/rk3568",
+  "target_cpu": "arm",
+  "type": "standard",
+  "version": "3.0",
+  "board": "rk3568",
+  "enable_ramdisk": true,
+  "build_selinux": false,
+  "support_jsapi": false,
+  "inherit": [ "productdefine/common/base/standard_system.json" ],
+  "subsystems": [
+    {
+      "subsystem": "rockchip_products",
+      "components": [
+        {
+          "component": "rockchip_products", "features":[ "is_support_boot_animation = false" ]
+        }
+      ]
+    },
+    {
+      "subsystem": "hdf",
+      "components": [
+        { "component": "drivers_interface_input" },
+        { "component": "drivers_interface_usb" },
+        { "component": "drivers_peripheral_usb" }
+      ]
+    },
+    {
+      "subsystem": "startup",
+      "components": [
+        { "component": "startup_l2" }
+      ]
+    },
+    {
+      "subsystem": "communication",
+      "components": [
+        { "component": "dsoftbus", "features":["dsoftbus_get_devicename=false"] }
+      ]
+    },
+    {
+      "subsystem": "hiviewdfx",
+      "components": [
+        { "component": "hiviewdfx_hilog_native"},
+        { "component": "hichecker_native" },
+        { "component": "hidumper"}
+      ]
+    },
+    {
+      "subsystem": "developtools",
+      "components": [
+        { "component": "hdc" }
+      ]
+    }
+  ]
+}

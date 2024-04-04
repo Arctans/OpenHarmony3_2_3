@@ -1,0 +1,13 @@
+{
+  "parts": {
+    "product_imx6dl": {
+      "module_list": [
+        "//vendor/unitech/imx6dl/default_app_config:default_app_config",
+        "//vendor/unitech/imx6dl/preinstall-config:preinstall-config",
+        "//vendor/unitech/imx6dl/resourceschedule:resourceschedule",
+        "//vendor/unitech/imx6dl/etc:product_etc_conf"
+      ]
+    }
+  },
+  "subsystem": "product_unitech"
+}

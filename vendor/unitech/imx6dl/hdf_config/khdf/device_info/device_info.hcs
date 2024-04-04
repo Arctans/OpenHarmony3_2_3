@@ -1,0 +1,74 @@
+ root {
+    device_info {
+        match_attr = "hdf_manager";
+        template host {
+            hostName = "";
+            priority = 100;
+            template device {
+                template deviceNode {
+                    policy = 0;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0664;
+                    moduleName = "";
+                    serviceName = "";
+                    deviceMatchAttr = "";
+                }
+            }
+        }
+        base :: host {
+            hostName = "base_host";
+            priority = 50;
+            device_support :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 10;
+                    permission = 0644;
+                    moduleName = "HDF_KEVENT";
+                    serviceName = "hdf_kevent";
+                }
+            }
+        }
+        platform :: host {
+            hostName = "platform_host";
+            priority = 50;
+			device_pwm :: device {
+				device_new :: deviceNode {
+                    policy = 2;
+                    priority = 80;
+                    permission = 0644;
+                    moduleName = "HDF_PLATFORM_NEW_TEST";
+                    serviceName = "HDF_PLATFORM_NEW_TEST5";
+                    deviceMatchAttr = "sample_new_test_5";
+               }
+
+           }
+		}
+		input :: host {
+            hostName = "input_host";
+            priority = 100;
+            device_input_manager :: device {
+                device0 :: deviceNode {
+                    policy = 2;
+                    priority = 100;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_INPUT_MANAGER";
+                    serviceName = "hdf_input_host";
+                    deviceMatchAttr = "";
+                }
+            }
+			device_touch_chip :: device {
+                device0 :: deviceNode {
+                    policy = 0;
+                    priority = 130;
+                    preload = 0;
+                    permission = 0660;
+                    moduleName = "HDF_TOUCH_GT911";
+                    serviceName = "hdf_touch_gt911_service";
+                    deviceMatchAttr = "zsj_gt911_5p5";
+                }
+            }
+		}
+	}
+}

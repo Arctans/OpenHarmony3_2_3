@@ -1,0 +1,123 @@
+{
+	"product_name": "imx6dl",
+	"device_company": "nxp",
+	"device_build_path": "device/board/unitech/imx6dl/",
+	"target_cpu": "arm",
+	"type": "standard",
+	"version": "3.0",
+	"board": "imx6dl",
+	"api_version": 8,
+	"enable_ramdisk": false,
+	"build_seccomp": true,
+	"inherit": [ "vendor/unitech/imx6dl/rich.json", "vendor/unitech/imx6dl/chipset_common.json" ],
+  "subsystems": [
+    {
+      "subsystem": "security",
+      "components": [
+        {
+          "component": "selinux",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "communication",
+      "components": [
+        {
+          "component": "netmanager_ext",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "hdf",
+      "components": [
+        {
+          "component": "drivers_interface_ril",
+          "features": []
+        },
+        {
+          "component": "drivers_peripheral_ril",
+          "features":[]
+        }
+      ]
+    },
+	{
+        "subsystem": "device_imx6dl",
+        "components": [
+          { "component": "imx6dl_linux_chipset", "features":[] },
+          { "component": "imx6dl_linux_bootanimations", "features":[] }
+       ]
+     },
+    {
+      "subsystem": "arkui",
+      "components": [
+        {
+          "component": "ace_engine",
+          "features": [
+            "ace_engine_feature_enable_accessibility = true",
+            "ace_engine_feature_enable_web = true"
+          ]
+        },
+        {
+          "component": "ui_appearance",
+          "features": []
+        }
+      ]
+    },
+    {
+      "subsystem": "wpa_supplicant-2.9",
+      "components": [
+        {
+          "component": "wpa_supplicant-2.9",
+          "features": [
+            "wpa_supplicant_driver_nl80211 = true"
+          ]
+        }
+      ]
+    },
+    {
+      "subsystem": "hdf",
+      "components": [
+        {
+          "component": "drivers_interface_audio",
+          "features": []
+        },
+        {
+          "component": "drivers_peripheral_audio",
+          "features": [
+            "drivers_peripheral_audio_full_test_suite = true",
+            "drivers_peripheral_audio_alsa_lib = false"
+          ]
+        }
+      ]
+    },
+    {
+      "component": "drivers_peripheral_codec",
+      "features": [
+        "drivers_peripheral_codec_support_omx = true"
+      ]
+    },
+    {
+      "subsystem": "startup",
+      "components": [
+        {
+          "component": "init",
+          "features": [
+            "enable_ohos_startup_init_feature_ab_partition = true",
+            "enable_ohos_startup_init_feature_loader = true"
+          ]
+        }
+      ]
+    },    
+    {
+    "subsystem": "ai",
+    "components": [
+        {
+          "component": "mindspore",
+          "features": []
+        }
+      ]
+    }
+  ]
+}
