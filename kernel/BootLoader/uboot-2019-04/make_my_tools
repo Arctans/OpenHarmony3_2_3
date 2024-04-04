@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ ! -d ../uboot_target ];then
+	mkdir ../uboot_target
+	cp config.bak ../uboot_target/.config
+else
+	echo uboot_target exist!
+fi
+
+. /opt/fsl-imx-x11/4.19-thud/environment-setup-cortexa9hf-neon-poky-linux-gnueabi
+export KBUILD_OUTPUT=../uboot_target
+make env

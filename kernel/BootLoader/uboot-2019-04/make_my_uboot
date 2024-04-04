@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ ! -d ../../../out/uboot_target ];then
+	mkdir ../../../out/kernel/uboot_target
+	cp config.bak ../../../out/kernel/uboot_target/.config
+else
+	echo uboot_target exist!
+fi
+
+. /opt/fsl-imx-x11/4.19-thud/environment-setup-cortexa9hf-neon-poky-linux-gnueabi
+export ARCH=arm
+export CROSS_COMPILE=arm-poky-linux-gnueabi-  
+export HOSTCC=/usr/bin/gcc
+export KBUILD_OUTPUT=../../../out/kernel/uboot_target
+#make mx6dlsabresd_config
+#make menuconfig
+make u-boot.imx
+cp ../../../out/kernel/uboot_target/u-boot.imx ../../../out/imx6dl/packages/phone/images/

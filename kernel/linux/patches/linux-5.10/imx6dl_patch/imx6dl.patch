@@ -1,0 +1,35 @@
+diff --git a/arch/arm/boot/Makefile b/arch/arm/boot/Makefile
+index 0b3cd7a33..5c132ee39 100644
+--- a/arch/arm/boot/Makefile
++++ b/arch/arm/boot/Makefile
+@@ -27,7 +27,8 @@ INITRD_PHYS := $(initrd_phys-y)
+ 
+ export ZRELADDR INITRD_PHYS PARAMS_PHYS
+ 
+-targets := Image zImage xipImage bootpImage uImage
++# targets := Image zImage xipImage bootpImage uImage
++targets := Image zImage xipImage bootpImage uImage zImage-dtb
+ 
+ ifeq ($(CONFIG_XIP_KERNEL),y)
+ 
+@@ -68,6 +69,10 @@ $(obj)/zImage:	$(obj)/compressed/vmlinux FORCE
+ 
+ endif
+ 
++$(obj)/zImage-dtb:	$(obj)/zImage FORCE
++	@cat $(obj)/zImage > $@
++	@$(kecho) '  Kernel: $@ is ready'
++
+ ifneq ($(LOADADDR),)
+   UIMAGE_LOADADDR=$(LOADADDR)
+ else
+@@ -86,7 +91,8 @@ if [ $(words $(UIMAGE_LOADADDR)) -ne 1 ]; then \
+ 	false; \
+ fi
+ 
+-$(obj)/uImage:	$(obj)/zImage FORCE
++$(obj)/uImage:	$(obj)/zImage-dtb FORCE
++# $(obj)/uImage:	$(obj)/zImage FORCE
+ 	@$(check_for_multiple_loadaddr)
+ 	$(call if_changed,uimage)
+ 
