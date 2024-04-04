@@ -1,0 +1,28 @@
+# Copyright (C) 2022 Hisilicon (Shanghai) Technologies Co., Ltd. All rights reserved.
+
+import("//build/ohos.gni")
+import("//build/ohos/ndk/ndk.gni")
+
+ohos_prebuilt_shared_library("gpu_libs") {
+  if (target_cpu == "arm") {
+    source = "lib/libmali.z.so"
+  }
+
+  subsystem_name = "hisilicon_products"
+  part_name = "hisilicon_products"
+  install_enable = true
+
+  # decoupling system.img and vendor.img
+  install_images = [ chipset_base_dir ]
+  relative_install_dir = "chipsetsdk"
+
+  symlink_target_name = [
+    "libEGL_impl.so",
+    "libGLESv1_impl.so",
+    "libGLESv2_impl.so",
+    "libGLESv3_impl.so",
+    "libmali.so.0",
+    "libmali.so.1",
+    "libMali.so",
+  ]
+}

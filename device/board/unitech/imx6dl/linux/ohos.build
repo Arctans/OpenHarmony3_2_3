@@ -1,0 +1,10 @@
+{
+  "subsystem": "device_imx6dl",
+  "parts": {
+    "imx6dl_linux_chipset": {
+      "module_list": [
+        "//device/board/unitech/imx6dl/linux:unitech-imx6dl-linux-group"
+      ]
+    }
+  }
+}

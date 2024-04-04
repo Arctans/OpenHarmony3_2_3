@@ -1,0 +1,10 @@
+{
+  "subsystem": "device_imx6dl",
+  "parts": {
+    "imx6dl_linux_bootanimations": {
+      "module_list": [
+        "//device/board/unitech/imx6dl/bootanimation:bootanimations"
+      ]
+    }
+  }
+}

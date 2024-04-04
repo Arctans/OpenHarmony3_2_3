@@ -1,0 +1,10 @@
+{
+  "parts": {
+    "device_imx6dl": {
+      "module_list": [
+        "//device/board/unitech/imx6dl:imx6dl"
+      ]
+    }
+  },
+  "subsystem": "device_imx6dl"
+}
