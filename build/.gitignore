@@ -1,6 +1,6 @@
 *.pyc
 **/__pycache__
 .idea/
-lite/
+#lite/
 .vscode/
 build_scripts/rundocker.sh
