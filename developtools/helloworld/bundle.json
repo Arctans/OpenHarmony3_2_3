@@ -1,0 +1,40 @@
+{
+  "name": "@ohos/bytrace",
+  "description": "A tool to trace processes and monitor performance",
+  "version": "3.1",
+  "license": "Apache License 2.0",
+  "publishAs": "code-segment",
+  "segment": {
+    "destPath": "developtools/helloworld"
+  },
+  "dirs": {},
+  "scripts": {},
+  "component": {
+    "name": "helloworld",
+    "subsystem": "developtools",
+    "adapted_system_type": [
+      "standard"
+    ],
+    "rom": "114KB",
+	"ram": "720KB",
+	"deps": {
+		"components": [
+		  "hitrace_native",
+		"hiviewdfx_hilog_native",
+        "init",
+		"ipc",
+		"napi"
+	  ],
+	  "third_party": [
+		  "zlib"
+	  ]
+	},
+	"build": {
+		"sub_component": [
+		  "//developtools/helloworld/bin:helloworld_target"
+	  ],
+	  "inner_kits": [
+	  ]
+	}
+  }
+}
