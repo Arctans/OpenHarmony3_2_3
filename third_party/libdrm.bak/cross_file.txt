@@ -1,0 +1,10 @@
+[binaries]
+c = 'arm-linux-musleabi-gcc'
+cpp = 'arm-linux-musleabi-g++'
+ar = 'arm-linux-musleabi-ar'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'arm'
+cpu = 'arm'
+endian = 'little'

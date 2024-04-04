@@ -1,0 +1,10 @@
+prefix=/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libdrm_radeon
+Description: Userspace interface to kernel DRM services for radeon
+Version: 2.4.102
+Requires.private: libdrm
+Libs: -L${libdir} -ldrm_radeon
+Cflags: -I${includedir} -I${includedir}/libdrm

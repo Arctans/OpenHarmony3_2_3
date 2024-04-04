@@ -1,0 +1,9 @@
+ 0x000000000000000e (SONAME)             Library soname: [libkms.so.1]
+kms_bo_create T 96
+kms_bo_destroy T 2c
+kms_bo_get_prop T 39
+kms_bo_map T a
+kms_bo_unmap T a
+kms_create T 9
+kms_destroy T 20
+kms_get_prop T 16

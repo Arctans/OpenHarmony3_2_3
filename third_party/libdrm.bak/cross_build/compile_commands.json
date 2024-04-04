@@ -1,0 +1,368 @@
+[
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Idrm@sha -I. -I.. -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'drm@sha/xf86drm.c.o' -MF 'drm@sha/xf86drm.c.o.d' -o 'drm@sha/xf86drm.c.o' -c ../xf86drm.c",
+    "file": "../xf86drm.c",
+    "output": "drm@sha/xf86drm.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Idrm@sha -I. -I.. -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'drm@sha/xf86drmHash.c.o' -MF 'drm@sha/xf86drmHash.c.o.d' -o 'drm@sha/xf86drmHash.c.o' -c ../xf86drmHash.c",
+    "file": "../xf86drmHash.c",
+    "output": "drm@sha/xf86drmHash.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Idrm@sha -I. -I.. -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'drm@sha/xf86drmRandom.c.o' -MF 'drm@sha/xf86drmRandom.c.o.d' -o 'drm@sha/xf86drmRandom.c.o' -c ../xf86drmRandom.c",
+    "file": "../xf86drmRandom.c",
+    "output": "drm@sha/xf86drmRandom.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Idrm@sha -I. -I.. -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'drm@sha/xf86drmSL.c.o' -MF 'drm@sha/xf86drmSL.c.o.d' -o 'drm@sha/xf86drmSL.c.o' -c ../xf86drmSL.c",
+    "file": "../xf86drmSL.c",
+    "output": "drm@sha/xf86drmSL.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Idrm@sha -I. -I.. -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'drm@sha/xf86drmMode.c.o' -MF 'drm@sha/xf86drmMode.c.o.d' -o 'drm@sha/xf86drmMode.c.o' -c ../xf86drmMode.c",
+    "file": "../xf86drmMode.c",
+    "output": "drm@sha/xf86drmMode.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/linux.c.o' -MF 'libkms/4bec46f@@kms@sha/linux.c.o.d' -o 'libkms/4bec46f@@kms@sha/linux.c.o' -c ../libkms/linux.c",
+    "file": "../libkms/linux.c",
+    "output": "libkms/4bec46f@@kms@sha/linux.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/dumb.c.o' -MF 'libkms/4bec46f@@kms@sha/dumb.c.o.d' -o 'libkms/4bec46f@@kms@sha/dumb.c.o' -c ../libkms/dumb.c",
+    "file": "../libkms/dumb.c",
+    "output": "libkms/4bec46f@@kms@sha/dumb.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/api.c.o' -MF 'libkms/4bec46f@@kms@sha/api.c.o.d' -o 'libkms/4bec46f@@kms@sha/api.c.o' -c ../libkms/api.c",
+    "file": "../libkms/api.c",
+    "output": "libkms/4bec46f@@kms@sha/api.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/vmwgfx.c.o' -MF 'libkms/4bec46f@@kms@sha/vmwgfx.c.o.d' -o 'libkms/4bec46f@@kms@sha/vmwgfx.c.o' -c ../libkms/vmwgfx.c",
+    "file": "../libkms/vmwgfx.c",
+    "output": "libkms/4bec46f@@kms@sha/vmwgfx.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/nouveau.c.o' -MF 'libkms/4bec46f@@kms@sha/nouveau.c.o.d' -o 'libkms/4bec46f@@kms@sha/nouveau.c.o' -c ../libkms/nouveau.c",
+    "file": "../libkms/nouveau.c",
+    "output": "libkms/4bec46f@@kms@sha/nouveau.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ilibkms/4bec46f@@kms@sha -Ilibkms -I../libkms -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'libkms/4bec46f@@kms@sha/radeon.c.o' -MF 'libkms/4bec46f@@kms@sha/radeon.c.o.d' -o 'libkms/4bec46f@@kms@sha/radeon.c.o' -c ../libkms/radeon.c",
+    "file": "../libkms/radeon.c",
+    "output": "libkms/4bec46f@@kms@sha/radeon.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Inouveau/79b9960@@drm_nouveau@sha -Inouveau -I../nouveau -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'nouveau/79b9960@@drm_nouveau@sha/nouveau.c.o' -MF 'nouveau/79b9960@@drm_nouveau@sha/nouveau.c.o.d' -o 'nouveau/79b9960@@drm_nouveau@sha/nouveau.c.o' -c ../nouveau/nouveau.c",
+    "file": "../nouveau/nouveau.c",
+    "output": "nouveau/79b9960@@drm_nouveau@sha/nouveau.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Inouveau/79b9960@@drm_nouveau@sha -Inouveau -I../nouveau -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'nouveau/79b9960@@drm_nouveau@sha/pushbuf.c.o' -MF 'nouveau/79b9960@@drm_nouveau@sha/pushbuf.c.o.d' -o 'nouveau/79b9960@@drm_nouveau@sha/pushbuf.c.o' -c ../nouveau/pushbuf.c",
+    "file": "../nouveau/pushbuf.c",
+    "output": "nouveau/79b9960@@drm_nouveau@sha/pushbuf.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Inouveau/79b9960@@drm_nouveau@sha -Inouveau -I../nouveau -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'nouveau/79b9960@@drm_nouveau@sha/bufctx.c.o' -MF 'nouveau/79b9960@@drm_nouveau@sha/bufctx.c.o.d' -o 'nouveau/79b9960@@drm_nouveau@sha/bufctx.c.o' -c ../nouveau/bufctx.c",
+    "file": "../nouveau/bufctx.c",
+    "output": "nouveau/79b9960@@drm_nouveau@sha/bufctx.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Inouveau/79b9960@@drm_nouveau@sha -Inouveau -I../nouveau -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'nouveau/79b9960@@drm_nouveau@sha/abi16.c.o' -MF 'nouveau/79b9960@@drm_nouveau@sha/abi16.c.o.d' -o 'nouveau/79b9960@@drm_nouveau@sha/abi16.c.o' -c ../nouveau/abi16.c",
+    "file": "../nouveau/abi16.c",
+    "output": "nouveau/79b9960@@drm_nouveau@sha/abi16.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo_gem.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo_gem.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo_gem.c.o' -c ../radeon/radeon_bo_gem.c",
+    "file": "../radeon/radeon_bo_gem.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_bo_gem.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_gem.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_gem.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_gem.c.o' -c ../radeon/radeon_cs_gem.c",
+    "file": "../radeon/radeon_cs_gem.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_cs_gem.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_space.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_space.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs_space.c.o' -c ../radeon/radeon_cs_space.c",
+    "file": "../radeon/radeon_cs_space.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_cs_space.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_bo.c.o' -c ../radeon/radeon_bo.c",
+    "file": "../radeon/radeon_bo.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_bo.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_cs.c.o' -c ../radeon/radeon_cs.c",
+    "file": "../radeon/radeon_cs.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_cs.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iradeon/a1e84d4@@drm_radeon@sha -Iradeon -I../radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'radeon/a1e84d4@@drm_radeon@sha/radeon_surface.c.o' -MF 'radeon/a1e84d4@@drm_radeon@sha/radeon_surface.c.o.d' -o 'radeon/a1e84d4@@drm_radeon@sha/radeon_surface.c.o' -c ../radeon/radeon_surface.c",
+    "file": "../radeon/radeon_surface.c",
+    "output": "radeon/a1e84d4@@drm_radeon@sha/radeon_surface.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_asic_id.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_asic_id.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_asic_id.c.o' -c ../amdgpu/amdgpu_asic_id.c",
+    "file": "../amdgpu/amdgpu_asic_id.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_asic_id.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_bo.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_bo.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_bo.c.o' -c ../amdgpu/amdgpu_bo.c",
+    "file": "../amdgpu/amdgpu_bo.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_bo.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_cs.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_cs.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_cs.c.o' -c ../amdgpu/amdgpu_cs.c",
+    "file": "../amdgpu/amdgpu_cs.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_cs.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_device.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_device.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_device.c.o' -c ../amdgpu/amdgpu_device.c",
+    "file": "../amdgpu/amdgpu_device.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_device.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_gpu_info.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_gpu_info.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_gpu_info.c.o' -c ../amdgpu/amdgpu_gpu_info.c",
+    "file": "../amdgpu/amdgpu_gpu_info.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_gpu_info.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vamgr.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vamgr.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vamgr.c.o' -c ../amdgpu/amdgpu_vamgr.c",
+    "file": "../amdgpu/amdgpu_vamgr.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vamgr.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vm.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vm.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vm.c.o' -c ../amdgpu/amdgpu_vm.c",
+    "file": "../amdgpu/amdgpu_vm.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/amdgpu_vm.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Iamdgpu/2894f6a@@drm_amdgpu@sha -Iamdgpu -I../amdgpu -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden '-DAMDGPU_ASIC_ID_TABLE=\"/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install/share/libdrm/amdgpu.ids\"' -MD -MQ 'amdgpu/2894f6a@@drm_amdgpu@sha/handle_table.c.o' -MF 'amdgpu/2894f6a@@drm_amdgpu@sha/handle_table.c.o.d' -o 'amdgpu/2894f6a@@drm_amdgpu@sha/handle_table.c.o' -c ../amdgpu/handle_table.c",
+    "file": "../amdgpu/handle_table.c",
+    "output": "amdgpu/2894f6a@@drm_amdgpu@sha/handle_table.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_device.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_device.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_device.c.o' -c ../freedreno/freedreno_device.c",
+    "file": "../freedreno/freedreno_device.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/freedreno_device.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_pipe.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_pipe.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_pipe.c.o' -c ../freedreno/freedreno_pipe.c",
+    "file": "../freedreno/freedreno_pipe.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/freedreno_pipe.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_ringbuffer.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_ringbuffer.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_ringbuffer.c.o' -c ../freedreno/freedreno_ringbuffer.c",
+    "file": "../freedreno/freedreno_ringbuffer.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/freedreno_ringbuffer.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo.c.o' -c ../freedreno/freedreno_bo.c",
+    "file": "../freedreno/freedreno_bo.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo_cache.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo_cache.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo_cache.c.o' -c ../freedreno/freedreno_bo_cache.c",
+    "file": "../freedreno/freedreno_bo_cache.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/freedreno_bo_cache.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_bo.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_bo.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_bo.c.o' -c ../freedreno/msm/msm_bo.c",
+    "file": "../freedreno/msm/msm_bo.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/msm_msm_bo.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_device.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_device.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_device.c.o' -c ../freedreno/msm/msm_device.c",
+    "file": "../freedreno/msm/msm_device.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/msm_msm_device.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_pipe.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_pipe.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_pipe.c.o' -c ../freedreno/msm/msm_pipe.c",
+    "file": "../freedreno/msm/msm_pipe.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/msm_msm_pipe.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Ifreedreno/95aff6a@@drm_freedreno@sha -Ifreedreno -I../freedreno -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_ringbuffer.c.o' -MF 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_ringbuffer.c.o.d' -o 'freedreno/95aff6a@@drm_freedreno@sha/msm_msm_ringbuffer.c.o' -c ../freedreno/msm/msm_ringbuffer.c",
+    "file": "../freedreno/msm/msm_ringbuffer.c",
+    "output": "freedreno/95aff6a@@drm_freedreno@sha/msm_msm_ringbuffer.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/util/16d880e@@util@sta -Itests/util -I../tests/util -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -MD -MQ 'tests/util/16d880e@@util@sta/format.c.o' -MF 'tests/util/16d880e@@util@sta/format.c.o.d' -o 'tests/util/16d880e@@util@sta/format.c.o' -c ../tests/util/format.c",
+    "file": "../tests/util/format.c",
+    "output": "tests/util/16d880e@@util@sta/format.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/util/16d880e@@util@sta -Itests/util -I../tests/util -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -MD -MQ 'tests/util/16d880e@@util@sta/kms.c.o' -MF 'tests/util/16d880e@@util@sta/kms.c.o.d' -o 'tests/util/16d880e@@util@sta/kms.c.o' -c ../tests/util/kms.c",
+    "file": "../tests/util/kms.c",
+    "output": "tests/util/16d880e@@util@sta/kms.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/util/16d880e@@util@sta -Itests/util -I../tests/util -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -MD -MQ 'tests/util/16d880e@@util@sta/pattern.c.o' -MF 'tests/util/16d880e@@util@sta/pattern.c.o.d' -o 'tests/util/16d880e@@util@sta/pattern.c.o' -c ../tests/util/pattern.c",
+    "file": "../tests/util/pattern.c",
+    "output": "tests/util/16d880e@@util@sta/pattern.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-test@sta -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kms/d711c5d@@kms-test@sta/libkms-test-crtc.c.o' -MF 'tests/kms/d711c5d@@kms-test@sta/libkms-test-crtc.c.o.d' -o 'tests/kms/d711c5d@@kms-test@sta/libkms-test-crtc.c.o' -c ../tests/kms/libkms-test-crtc.c",
+    "file": "../tests/kms/libkms-test-crtc.c",
+    "output": "tests/kms/d711c5d@@kms-test@sta/libkms-test-crtc.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-test@sta -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kms/d711c5d@@kms-test@sta/libkms-test-device.c.o' -MF 'tests/kms/d711c5d@@kms-test@sta/libkms-test-device.c.o.d' -o 'tests/kms/d711c5d@@kms-test@sta/libkms-test-device.c.o' -c ../tests/kms/libkms-test-device.c",
+    "file": "../tests/kms/libkms-test-device.c",
+    "output": "tests/kms/d711c5d@@kms-test@sta/libkms-test-device.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-test@sta -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kms/d711c5d@@kms-test@sta/libkms-test-framebuffer.c.o' -MF 'tests/kms/d711c5d@@kms-test@sta/libkms-test-framebuffer.c.o.d' -o 'tests/kms/d711c5d@@kms-test@sta/libkms-test-framebuffer.c.o' -c ../tests/kms/libkms-test-framebuffer.c",
+    "file": "../tests/kms/libkms-test-framebuffer.c",
+    "output": "tests/kms/d711c5d@@kms-test@sta/libkms-test-framebuffer.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-test@sta -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kms/d711c5d@@kms-test@sta/libkms-test-plane.c.o' -MF 'tests/kms/d711c5d@@kms-test@sta/libkms-test-plane.c.o.d' -o 'tests/kms/d711c5d@@kms-test@sta/libkms-test-plane.c.o' -c ../tests/kms/libkms-test-plane.c",
+    "file": "../tests/kms/libkms-test-plane.c",
+    "output": "tests/kms/d711c5d@@kms-test@sta/libkms-test-plane.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-test@sta -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -fPIC -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kms/d711c5d@@kms-test@sta/libkms-test-screen.c.o' -MF 'tests/kms/d711c5d@@kms-test@sta/libkms-test-screen.c.o.d' -o 'tests/kms/d711c5d@@kms-test@sta/libkms-test-screen.c.o' -c ../tests/kms/libkms-test-screen.c",
+    "file": "../tests/kms/libkms-test-screen.c",
+    "output": "tests/kms/d711c5d@@kms-test@sta/libkms-test-screen.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-steal-crtc@exe -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -MD -MQ 'tests/kms/d711c5d@@kms-steal-crtc@exe/kms-steal-crtc.c.o' -MF 'tests/kms/d711c5d@@kms-steal-crtc@exe/kms-steal-crtc.c.o.d' -o 'tests/kms/d711c5d@@kms-steal-crtc@exe/kms-steal-crtc.c.o' -c ../tests/kms/kms-steal-crtc.c",
+    "file": "../tests/kms/kms-steal-crtc.c",
+    "output": "tests/kms/d711c5d@@kms-steal-crtc@exe/kms-steal-crtc.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kms/d711c5d@@kms-universal-planes@exe -Itests/kms -I../tests/kms -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -MD -MQ 'tests/kms/d711c5d@@kms-universal-planes@exe/kms-universal-planes.c.o' -MF 'tests/kms/d711c5d@@kms-universal-planes@exe/kms-universal-planes.c.o.d' -o 'tests/kms/d711c5d@@kms-universal-planes@exe/kms-universal-planes.c.o' -c ../tests/kms/kms-universal-planes.c",
+    "file": "../tests/kms/kms-universal-planes.c",
+    "output": "tests/kms/d711c5d@@kms-universal-planes@exe/kms-universal-planes.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/modeprint/6b185c3@@modeprint@exe -Itests/modeprint -I../tests/modeprint -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/modeprint/6b185c3@@modeprint@exe/modeprint.c.o' -MF 'tests/modeprint/6b185c3@@modeprint@exe/modeprint.c.o.d' -o 'tests/modeprint/6b185c3@@modeprint@exe/modeprint.c.o' -c ../tests/modeprint/modeprint.c",
+    "file": "../tests/modeprint/modeprint.c",
+    "output": "tests/modeprint/6b185c3@@modeprint@exe/modeprint.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/proptest/7eb5fbb@@proptest@exe -Itests/proptest -I../tests/proptest -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/proptest/7eb5fbb@@proptest@exe/proptest.c.o' -MF 'tests/proptest/7eb5fbb@@proptest@exe/proptest.c.o.d' -o 'tests/proptest/7eb5fbb@@proptest@exe/proptest.c.o' -c ../tests/proptest/proptest.c",
+    "file": "../tests/proptest/proptest.c",
+    "output": "tests/proptest/7eb5fbb@@proptest@exe/proptest.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/modetest/f8783dc@@modetest@exe -Itests/modetest -I../tests/modetest -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -Wno-pointer-arith -MD -MQ 'tests/modetest/f8783dc@@modetest@exe/buffers.c.o' -MF 'tests/modetest/f8783dc@@modetest@exe/buffers.c.o.d' -o 'tests/modetest/f8783dc@@modetest@exe/buffers.c.o' -c ../tests/modetest/buffers.c",
+    "file": "../tests/modetest/buffers.c",
+    "output": "tests/modetest/f8783dc@@modetest@exe/buffers.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/modetest/f8783dc@@modetest@exe -Itests/modetest -I../tests/modetest -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -Wno-pointer-arith -MD -MQ 'tests/modetest/f8783dc@@modetest@exe/cursor.c.o' -MF 'tests/modetest/f8783dc@@modetest@exe/cursor.c.o.d' -o 'tests/modetest/f8783dc@@modetest@exe/cursor.c.o' -c ../tests/modetest/cursor.c",
+    "file": "../tests/modetest/cursor.c",
+    "output": "tests/modetest/f8783dc@@modetest@exe/cursor.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/modetest/f8783dc@@modetest@exe -Itests/modetest -I../tests/modetest -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -Wno-pointer-arith -MD -MQ 'tests/modetest/f8783dc@@modetest@exe/modetest.c.o' -MF 'tests/modetest/f8783dc@@modetest@exe/modetest.c.o.d' -o 'tests/modetest/f8783dc@@modetest@exe/modetest.c.o' -c ../tests/modetest/modetest.c",
+    "file": "../tests/modetest/modetest.c",
+    "output": "tests/modetest/f8783dc@@modetest@exe/modetest.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/vbltest/3928abf@@vbltest@exe -Itests/vbltest -I../tests/vbltest -I. -I../ -Itests -I../tests -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/vbltest/3928abf@@vbltest@exe/vbltest.c.o' -MF 'tests/vbltest/3928abf@@vbltest@exe/vbltest.c.o.d' -o 'tests/vbltest/3928abf@@vbltest@exe/vbltest.c.o' -c ../tests/vbltest/vbltest.c",
+    "file": "../tests/vbltest/vbltest.c",
+    "output": "tests/vbltest/3928abf@@vbltest@exe/vbltest.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/kmstest/e2824f4@@kmstest@exe -Itests/kmstest -I../tests/kmstest -I. -I../ -Itests -I../tests -Itests/kmstest/../../libkms -I../tests/kmstest/../../libkms -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/kmstest/e2824f4@@kmstest@exe/main.c.o' -MF 'tests/kmstest/e2824f4@@kmstest@exe/main.c.o.d' -o 'tests/kmstest/e2824f4@@kmstest@exe/main.c.o' -c ../tests/kmstest/main.c",
+    "file": "../tests/kmstest/main.c",
+    "output": "tests/kmstest/e2824f4@@kmstest@exe/main.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/radeon/f866ec7@@radeon_ttm@exe -Itests/radeon -I../tests/radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/radeon/f866ec7@@radeon_ttm@exe/rbo.c.o' -MF 'tests/radeon/f866ec7@@radeon_ttm@exe/rbo.c.o.d' -o 'tests/radeon/f866ec7@@radeon_ttm@exe/rbo.c.o' -c ../tests/radeon/rbo.c",
+    "file": "../tests/radeon/rbo.c",
+    "output": "tests/radeon/f866ec7@@radeon_ttm@exe/rbo.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/radeon/f866ec7@@radeon_ttm@exe -Itests/radeon -I../tests/radeon -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/radeon/f866ec7@@radeon_ttm@exe/radeon_ttm.c.o' -MF 'tests/radeon/f866ec7@@radeon_ttm@exe/radeon_ttm.c.o.d' -o 'tests/radeon/f866ec7@@radeon_ttm@exe/radeon_ttm.c.o' -c ../tests/radeon/radeon_ttm.c",
+    "file": "../tests/radeon/radeon_ttm.c",
+    "output": "tests/radeon/f866ec7@@radeon_ttm@exe/radeon_ttm.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/nouveau/e47a46e@@threaded@exe -Itests/nouveau -I../tests/nouveau -I. -I../ -I../include/drm -Itests/nouveau/../../nouveau -I../tests/nouveau/../../nouveau -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -pthread -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/nouveau/e47a46e@@threaded@exe/threaded.c.o' -MF 'tests/nouveau/e47a46e@@threaded@exe/threaded.c.o.d' -o 'tests/nouveau/e47a46e@@threaded@exe/threaded.c.o' -c ../tests/nouveau/threaded.c",
+    "file": "../tests/nouveau/threaded.c",
+    "output": "tests/nouveau/e47a46e@@threaded@exe/threaded.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/59830eb@@drmsl@exe -Itests -I../tests -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/59830eb@@drmsl@exe/drmsl.c.o' -MF 'tests/59830eb@@drmsl@exe/drmsl.c.o.d' -o 'tests/59830eb@@drmsl@exe/drmsl.c.o' -c ../tests/drmsl.c",
+    "file": "../tests/drmsl.c",
+    "output": "tests/59830eb@@drmsl@exe/drmsl.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/59830eb@@hash@exe -Itests -I../tests -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/59830eb@@hash@exe/hash.c.o' -MF 'tests/59830eb@@hash@exe/hash.c.o.d' -o 'tests/59830eb@@hash@exe/hash.c.o' -c ../tests/hash.c",
+    "file": "../tests/hash.c",
+    "output": "tests/59830eb@@hash@exe/hash.c.o"
+  },
+  {
+    "directory": "/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build",
+    "command": "arm-linux-musleabi-gcc -Itests/59830eb@@drmdevice@exe -Itests -I../tests -I. -I../ -I../include/drm -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -std=gnu99 -O2 -g -include config.h -Wall -Wextra -Wsign-compare -Werror=undef -Werror=implicit-function-declaration -Wpointer-arith -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wpacked -Wswitch-enum -Wmissing-format-attribute -Wstrict-aliasing=2 -Winit-self -Winline -Wshadow -Wdeclaration-after-statement -Wold-style-definition -Wno-unused-parameter -Wno-attributes -Wno-long-long -Wno-missing-field-initializers -fvisibility=hidden -MD -MQ 'tests/59830eb@@drmdevice@exe/drmdevice.c.o' -MF 'tests/59830eb@@drmdevice@exe/drmdevice.c.o.d' -o 'tests/59830eb@@drmdevice@exe/drmdevice.c.o' -c ../tests/drmdevice.c",
+    "file": "../tests/drmdevice.c",
+    "output": "tests/59830eb@@drmdevice@exe/drmdevice.c.o"
+  }
+]

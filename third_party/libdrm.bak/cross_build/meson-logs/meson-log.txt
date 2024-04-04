@@ -1,0 +1,635 @@
+Build started at 2024-03-26T12:01:58.840403
+Main binary: /usr/bin/python3
+Build Options: -Dprefix=/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/musl_install '--cross-file cross_file.txt'
+Python system: Linux
+The Meson build system
+Version: 0.53.2
+Source dir: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak
+Build dir: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build
+Build type: cross build
+Project name: libdrm
+Project version: 2.4.102
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/sanitycheckc.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+C linker for the build machine: cc ld.bfd 2.34
+Sanity testing C compiler: arm-linux-musleabi-gcc
+Is cross compiler: True.
+Sanity check compiler command line: arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/sanitycheckc.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/sanitycheckc_cross.exe -pipe -D_FILE_OFFSET_BITS=64 -c
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+C compiler for the host machine: arm-linux-musleabi-gcc (gcc 11.2.1 "arm-linux-musleabi-gcc (GCC) 11.2.1 20211120")
+C linker for the host machine: arm-linux-musleabi-gcc ld.bfd 2.37
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: arm
+Host machine cpu: arm
+Target machine cpu family: arm
+Target machine cpu: arm
+Run-time dependency threads found: YES
+Program symbols-check.py found: YES (/usr/bin/python3 /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/symbols-check.py)
+Program nm found: YES (/usr/bin/nm)
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Found Pkg-config: NO
+Pkg-config binary for machine MachineChoice.HOST not found. Giving up.
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Found CMake: NO
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency atomic_ops found: NO (tried pkgconfig and cmake)
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptiyf7y89
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptiyf7y89/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptiyf7y89/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+    int atomic_add(int *i) { return __sync_add_and_fetch (i, 1); }
+    int atomic_cmpxchg(int *i, int j, int k) { return __sync_val_compare_and_swap (i, j, k); }
+    int main() { }
+    
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "Intel Atomics" links: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpuz5wp176
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpuz5wp176/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpuz5wp176/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #define dlsym meson_disable_define_of_dlsym
+        
+        #include <limits.h>
+        #undef dlsym
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlsym (void);
+        
+        #if defined __stub_dlsym || defined __stub___dlsym
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dlsym ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "dlsym" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp10klxd8t
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp10klxd8t/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp10klxd8t/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #define _GNU_SOURCE
+#include <time.h>
+#include <limits.h>
+
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &clock_gettime;
+            long b = (long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptr__xsyn
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptr__xsyn/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptr__xsyn/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmppzypru8f
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmppzypru8f/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmppzypru8f/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #include <sys/select.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "sys/select.h works" compiles: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe5j0cr4n
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe5j0cr4n/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe5j0cr4n/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #include <alloca.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "alloca.h works" compiles: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpzt4yntch
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpzt4yntch/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpzt4yntch/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "major" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0iqoy2gl
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0iqoy2gl/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0iqoy2gl/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef minor
+                minor;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "minor" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp498jcciy
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp498jcciy/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp498jcciy/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef makedev
+                makedev;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "makedev" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpjw9mo602
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpjw9mo602/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpjw9mo602/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/mkdev.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpjw9mo602/testfile.c:2:18: fatal error: sys/mkdev.h: No such file or directory
+    2 |         #include <sys/mkdev.h>
+      |                  ^~~~~~~~~~~~~
+compilation terminated.
+
+Header <sys/mkdev.h> has symbol "major" : NO 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpirxj6n74
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpirxj6n74/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpirxj6n74/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #define open_memstream meson_disable_define_of_open_memstream
+        
+        #include <limits.h>
+        #undef open_memstream
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char open_memstream (void);
+        
+        #if defined __stub_open_memstream || defined __stub___open_memstream
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return open_memstream ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "open_memstream" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpx7fjygbi
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpx7fjygbi/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpx7fjygbi/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wall 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wall: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiwy1asvg
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiwy1asvg/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiwy1asvg/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wextra 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wextra: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp46fvy0i8
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp46fvy0i8/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp46fvy0i8/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wsign-compare: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpusg0ktqp
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpusg0ktqp/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpusg0ktqp/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=undef 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=undef: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpw_trwvw0
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpw_trwvw0/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpw_trwvw0/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1iplhb2c
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1iplhb2c/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1iplhb2c/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptdr5a_lq
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptdr5a_lq/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptdr5a_lq/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpr8kp02ta
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpr8kp02ta/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpr8kp02ta/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmphbjz7c47
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmphbjz7c47/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmphbjz7c47/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmgvl83p_
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmgvl83p_/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmgvl83p_/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpt18bco75
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpt18bco75/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpt18bco75/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe11clpir
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe11clpir/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpe11clpir/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wpacked 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpacked: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpaz8os6e3
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpaz8os6e3/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpaz8os6e3/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-enum 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpozdqcsqv
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpozdqcsqv/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpozdqcsqv/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-format-attribute 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpxn2nqyw1
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpxn2nqyw1/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpxn2nqyw1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing=2 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-aliasing=2: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0hcphcp2
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0hcphcp2/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0hcphcp2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Winit-self 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winit-self: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptds51dj7
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptds51dj7/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptds51dj7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Winline 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winline: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmprs85v6ci
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmprs85v6ci/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmprs85v6ci/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wshadow 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wshadow: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp6qfnkanc
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp6qfnkanc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp6qfnkanc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptsia86mc
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptsia86mc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmptsia86mc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1jspt3tc
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1jspt3tc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp1jspt3tc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wunused-parameter: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0wpovtag
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0wpovtag/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmp0wpovtag/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wattributes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wattributes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpetg0jep8
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpetg0jep8/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpetg0jep8/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wlong-long 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wlong-long: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpsaqs56n9
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpsaqs56n9/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpsaqs56n9/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-field-initializers: YES 
+Pkg-config binary for MachineChoice.HOST is cached as not found.
+Pkg-config binary for machine MachineChoice.HOST not found. Giving up.
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency pciaccess found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached as not found.
+Pkg-config binary for machine MachineChoice.HOST not found. Giving up.
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency cunit found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached as not found.
+Pkg-config binary for machine MachineChoice.HOST not found. Giving up.
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency cairo found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached as not found.
+Pkg-config binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency valgrind found: NO (tried pkgconfig)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program sed found: YES (/usr/bin/sed)
+Running command: /usr/bin/xsltproc --nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+--- stdout ---
+
+--- stderr ---
+I/O error : Attempt to load network entity http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+warning: failed to load external entity "http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"
+cannot parse http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+
+
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiqzzimcl
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiqzzimcl/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpiqzzimcl/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ int foo_hidden(void) __attribute__((visibility(("hidden"))));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "compiler supports __attribute__(("hidden"))" compiles: YES 
+Configuring config.h using configuration
+Adding test "core-symbols-check"
+Adding test "kms-symbols-check"
+Adding test "nouveau-symbols-check"
+Adding test "radeon-symbols-check"
+Adding test "amdgpu-symbols-check"
+Adding test "freedreno-symbols-check"
+Adding test "threaded"
+Adding test "hash"
+Adding test "drmsl"
+Adding test "drmdevice"
+Message: 
+Message: libdrm will be compiled with:
+Message: 
+Message:   libkms         true
+Message:   Intel API      false
+Message:   vmwgfx API     true
+Message:   Radeon API     true
+Message:   AMDGPU API     true
+Message:   Nouveau API    true
+Message:   OMAP API       false
+Message:   EXYNOS API     false
+Message:   Freedreno API  true (kgsl: false)
+Message:   Tegra API      false
+Message:   VC4 API        true
+Message:   Etnaviv API    false
+Message: 
+Build targets in project: 20
+
+Found ninja-1.10.0 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmev77db7
+Command line:  arm-linux-musleabi-gcc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmev77db7/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/cross_build/meson-private/tmpmev77db7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/
+programs: =/opt/musl/arm-linux-musleabi-cross/bin/../libexec/gcc/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../libexec/gcc/:/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/../../../../arm-linux-musleabi/bin/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/../../../../arm-linux-musleabi/bin/
+libraries: =/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/:/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/../../../../arm-linux-musleabi/lib/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../lib/gcc/arm-linux-musleabi/11.2.1/../../../../arm-linux-musleabi/lib/:/opt/musl/arm-linux-musleabi-cross/bin/../arm-linux-musleabi/lib/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../arm-linux-musleabi/lib/:/opt/musl/arm-linux-musleabi-cross/bin/../arm-linux-musleabi/usr/lib/arm-linux-musleabi/11.2.1/:/opt/musl/arm-linux-musleabi-cross/bin/../arm-linux-musleabi/usr/lib/
+
+Compiler stderr:
+ 
+WARNING: Cross file does not specify strip binary, result will not be stripped.
+WARNING: Cross file does not specify strip binary, result will not be stripped.

@@ -1,0 +1,747 @@
+Build started at 2024-02-01T17:23:03.776285
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.53.2
+Source dir: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak
+Build dir: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir
+Build type: native build
+Project name: libdrm
+Project version: 2.4.102
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+C linker for the build machine: cc ld.bfd 2.34
+No CFLAGS in the environment, not changing global flags.
+No LDFLAGS in the environment, not changing global flags.
+No CPPFLAGS in the environment, not changing global flags.
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/sanitycheckc.exe
+C compiler for the host machine: ccache cc (gcc 9.4.0 "cc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0")
+C linker for the host machine: cc ld.bfd 2.34
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Run-time dependency threads found: YES
+Program symbols-check.py found: YES (/usr/bin/python3 /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/symbols-check.py)
+Program nm found: YES (/usr/bin/nm)
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default pkg-config fallback at pkg-config
+Trying pkg-config binary pkg-config for machine MachineChoice.HOST at ['/usr/bin/pkg-config']
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'atomic_ops' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion atomic_ops` -> 1
+
+CMake binary for MachineChoice.HOST is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Trying CMake binary cmake for machine MachineChoice.HOST at [None]
+Did not find CMake 'cmake'
+Found CMake: NO
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency atomic_ops found: NO (tried pkgconfig and cmake)
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpbs0uhvmj
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpbs0uhvmj/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpbs0uhvmj/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+    int atomic_add(int *i) { return __sync_add_and_fetch (i, 1); }
+    int atomic_cmpxchg(int *i, int j, int k) { return __sync_val_compare_and_swap (i, j, k); }
+    int main() { }
+    
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "Intel Atomics" links: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp61y43dpd
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp61y43dpd/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp61y43dpd/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #define dlsym meson_disable_define_of_dlsym
+        
+        #include <limits.h>
+        #undef dlsym
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlsym (void);
+        
+        #if defined __stub_dlsym || defined __stub___dlsym
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dlsym ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /usr/bin/ld: /tmp/cceVKvo0.o: in function `main':
+testfile.c:(.text+0x9): undefined reference to `dlsym'
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        int main(void) {
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dlsym)
+                #error "__builtin_dlsym not found"
+            #endif
+        #elif ! defined(dlsym)
+            /* Check for __builtin_dlsym only if no includes were added to the
+             * prefix above, which means no definition of dlsym can be found.
+             * We would always check for this, but we get false positives on
+             * MSYS2 if we do. Their toolchain is broken, but we can at least
+             * give them a workaround. */
+            #if 1
+                __builtin_dlsym;
+            #else
+                #error "No definition for __builtin_dlsym found in the prefix"
+            #endif
+        #endif
+        return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2/testfile.c: In function 'main':
+/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2/testfile.c:14:17: error: '__builtin_dlsym' undeclared (first use in this function); did you mean '__builtin_drem'?
+   14 |                 __builtin_dlsym;
+      |                 ^~~~~~~~~~~~~~~
+      |                 __builtin_drem
+/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppedjpjl2/testfile.c:14:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Checking for function "dlsym" : NO 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpofnlon1v
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpofnlon1v/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpofnlon1v/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpasvr8_zz
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpasvr8_zz/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpasvr8_zz/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #define _GNU_SOURCE
+#include <time.h>
+#include <limits.h>
+
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &clock_gettime;
+            long b = (long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpu4e1tcbc
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpu4e1tcbc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpu4e1tcbc/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpnt4bocx9
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpnt4bocx9/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpnt4bocx9/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #include <sys/select.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "sys/select.h works" compiles: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpvzgoafzu
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpvzgoafzu/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpvzgoafzu/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ #include <alloca.h>
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "alloca.h works" compiles: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppihjxdy5
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppihjxdy5/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmppihjxdy5/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "major" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpettgh8li
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpettgh8li/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpettgh8li/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef minor
+                minor;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "minor" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp9ehs112i
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp9ehs112i/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp9ehs112i/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef makedev
+                makedev;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <sys/sysmacros.h> has symbol "makedev" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpb_x_j8tp
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpb_x_j8tp/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpb_x_j8tp/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #include <sys/mkdev.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef major
+                major;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpb_x_j8tp/testfile.c:2:18: fatal error: sys/mkdev.h: No such file or directory
+    2 |         #include <sys/mkdev.h>
+      |                  ^~~~~~~~~~~~~
+compilation terminated.
+
+Header <sys/mkdev.h> has symbol "major" : NO 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpwo89we0w
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpwo89we0w/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpwo89we0w/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ 
+        #define open_memstream meson_disable_define_of_open_memstream
+        
+        #include <limits.h>
+        #undef open_memstream
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char open_memstream (void);
+        
+        #if defined __stub_open_memstream || defined __stub___open_memstream
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return open_memstream ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "open_memstream" : YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiikoz2k4
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiikoz2k4/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiikoz2k4/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wall 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wall: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp138is9mk
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp138is9mk/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp138is9mk/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wextra 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wextra: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8x4equ2c
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8x4equ2c/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8x4equ2c/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wsign-compare 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wsign-compare: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiyr0gvz1
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiyr0gvz1/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpiyr0gvz1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=undef 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=undef: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzmlz3dkt
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzmlz3dkt/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzmlz3dkt/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Werror=implicit-function-declaration 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Werror=implicit-function-declaration: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpxlijnu1s
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpxlijnu1s/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpxlijnu1s/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpauh3lell
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpauh3lell/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpauh3lell/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpgzq8qok2
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpgzq8qok2/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpgzq8qok2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-prototypes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-prototypes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp2c8ilsuc
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp2c8ilsuc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp2c8ilsuc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpckizv746
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpckizv746/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpckizv746/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp7syn04en
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp7syn04en/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp7syn04en/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wnested-externs 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wnested-externs: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzaea9bc7
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzaea9bc7/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpzaea9bc7/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wpacked 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpacked: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpuux9bzwc
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpuux9bzwc/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpuux9bzwc/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wswitch-enum 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wswitch-enum: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpj2er0rv8
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpj2er0rv8/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpj2er0rv8/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-format-attribute 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-format-attribute: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpqiv9_nw0
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpqiv9_nw0/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpqiv9_nw0/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wstrict-aliasing=2 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wstrict-aliasing=2: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp_qe17oy5
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp_qe17oy5/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp_qe17oy5/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Winit-self 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winit-self: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpkddkf4oo
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpkddkf4oo/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpkddkf4oo/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Winline 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winline: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpo722pwe4
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpo722pwe4/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpo722pwe4/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wshadow 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wshadow: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpt7r7gboz
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpt7r7gboz/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpt7r7gboz/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpp704rqd2
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpp704rqd2/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpp704rqd2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8v2lm7xq
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8v2lm7xq/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8v2lm7xq/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wunused-parameter 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wunused-parameter: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp3d64vk7y
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp3d64vk7y/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp3d64vk7y/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wattributes 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wattributes: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpes3t4uo2
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpes3t4uo2/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpes3t4uo2/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wlong-long 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wlong-long: YES 
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8n47kr2e
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8n47kr2e/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp8n47kr2e/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-field-initializers 
+
+Code:
+ int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-field-initializers: YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'pciaccess' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion pciaccess` -> 0
+0.16
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --cflags pciaccess` -> 0
+
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config pciaccess --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lpciaccess
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config pciaccess --libs` -> 0
+-lpciaccess
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpaed22ank
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpaed22ank/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpaed22ank/output.exe -pipe -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp1jli5bu1
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp1jli5bu1/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmp1jli5bu1/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/9/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/9/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/9/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency pciaccess found: YES 0.16
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'cunit' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion cunit` -> 1
+
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency cunit found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'cairo' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion cairo` -> 1
+
+CMake binary for MachineChoice.HOST is cached as not found
+No CMake binary for machine MachineChoice.HOST not found. Giving up.
+Run-time dependency cairo found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'valgrind' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/bin/pkg-config --modversion valgrind` -> 1
+
+Run-time dependency valgrind found: NO (tried pkgconfig)
+Program xsltproc found: YES (/usr/bin/xsltproc)
+Program sed found: YES (/usr/bin/sed)
+Running command: /usr/bin/xsltproc --nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+--- stdout ---
+
+--- stderr ---
+I/O error : Attempt to load network entity http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+warning: failed to load external entity "http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl"
+cannot parse http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl
+
+
+Running compile:
+Working directory:  /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpa87l3wjm
+Command line:  ccache cc /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpa87l3wjm/testfile.c -o /home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/builddir/meson-private/tmpa87l3wjm/output.obj -pipe -c -D_FILE_OFFSET_BITS=64 -O0 -std=gnu99 
+
+Code:
+ int foo_hidden(void) __attribute__((visibility(("hidden"))));
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "compiler supports __attribute__(("hidden"))" compiles: YES 
+Configuring config.h using configuration
+Adding test "core-symbols-check"
+Adding test "kms-symbols-check"
+Program tests/gen4-3d.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gen4-3d.batch.sh)
+Adding test "gen4-3d.batch"
+Program tests/gm45-3d.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gm45-3d.batch.sh)
+Adding test "gen45-3d.batch"
+Program tests/gen5-3d.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gen5-3d.batch.sh)
+Adding test "gen5-3d.batch"
+Program tests/gen6-3d.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gen6-3d.batch.sh)
+Adding test "gen6-3d.batch"
+Program tests/gen7-3d.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gen7-3d.batch.sh)
+Adding test "gen7-3d.batch"
+Program tests/gen7-2d-copy.batch.sh found: YES (/home/ut-e05857/workspace/OpenHarmony/harmony3_2_3/harmony3_2_3/third_party/libdrm.bak/intel/tests/gen7-2d-copy.batch.sh)
+Adding test "gen7-2d-copy.batch"
+Adding test "intel-symbols-check"
+Adding test "nouveau-symbols-check"
+Adding test "radeon-symbols-check"
+Adding test "amdgpu-symbols-check"
+Adding test "threaded"
+Adding test "hash"
+Adding test "drmsl"
+Adding test "drmdevice"
+Message: 
+Message: libdrm will be compiled with:
+Message: 
+Message:   libkms         true
+Message:   Intel API      true
+Message:   vmwgfx API     true
+Message:   Radeon API     true
+Message:   AMDGPU API     true
+Message:   Nouveau API    true
+Message:   OMAP API       false
+Message:   EXYNOS API     false
+Message:   Freedreno API  false (kgsl: false)
+Message:   Tegra API      false
+Message:   VC4 API        false
+Message:   Etnaviv API    false
+Message: 
+Build targets in project: 21
+
+Found ninja-1.10.0 at /usr/bin/ninja

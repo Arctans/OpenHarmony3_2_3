@@ -1,0 +1,35 @@
+import("//build/ohos.gni")
+ohos_executable("modetest") {
+  sources = [
+    "buffers.c",
+    "cursor.c",
+    "modetest.c",
+  ]
+
+  cflags = [
+      "-Wno-pointer-arith",
+  ]
+
+  include_dirs = [
+    "../",
+    ".",
+  ]
+
+  configs = [ "//third_party/libdrm:libdrm_config" ]
+
+  public_configs = [ "//third_party/libdrm:libdrm_public_config" ]
+
+  deps = [
+    "//third_party/libdrm:libdrm",
+    "//third_party/libdrm/tests/util/:util",
+  ]
+
+  public_deps = []
+
+  install_images = [
+    "system",
+    "updater",
+  ]
+  part_name = "graphic_standard"
+  subsystem_name = "graphic"
+}
