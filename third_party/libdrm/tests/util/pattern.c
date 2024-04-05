@@ -985,7 +985,7 @@ static void fill_tiles_rgb16fp(const struct util_format_info *info, void *mem,
 			       unsigned int stride)
 {
 	const struct util_rgb_info *rgb = &info->rgb;
-	void *mem_base = mem;
+	/* void *mem_base = mem; */
 	unsigned int x, y;
 
 	/* TODO: Give this actual fp16 precision */

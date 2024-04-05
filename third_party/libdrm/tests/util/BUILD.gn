@@ -1,0 +1,27 @@
+import("//build/ohos.gni")
+
+ohos_static_library("util") {
+
+  sources = [
+    "format.c",
+    "kms.c",
+    "pattern.c",
+  ]
+
+  cflags = []
+
+  include_dirs = [
+    "../",
+    ".",
+  ]
+
+  configs = [ "//third_party/libdrm:libdrm_config" ]
+
+  public_configs = [ "//third_party/libdrm:libdrm_public_config" ]
+
+  deps = [
+    "//third_party/libdrm:libdrm",
+  ]
+
+  public_deps = []
+}
