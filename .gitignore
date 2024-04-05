@@ -4,3 +4,5 @@ ohos_config.json
 out/
 prebuilts/
 ccache.log.old
+*.o
+*.vcxproj
