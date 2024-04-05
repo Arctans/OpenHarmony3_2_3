@@ -1,0 +1,6 @@
+.ccache/
+ccache.log
+ohos_config.json
+out/
+prebuilts/
+ccache.log.old
