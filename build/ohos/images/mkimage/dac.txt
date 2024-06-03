@@ -39,3 +39,10 @@ updater/lib/ld-musl-aaarch64-asan.so.1,00755,      0,          2000,       0
 updater/lib/ld-musl-x86_64-asan.so.1,00755,      0,          2000,       0
 vendor/etc/thermal_config/hdf/thermal_hdi_config.xml,00644,	3025,	3025,	0
 system/etc/ledconfig/led_config.json,00644,	3025,	3025,		0
+#lwl add 20240603
+system/etc/ssh/authorized_keys, 00600,      0,          0,          0
+system/etc/ssh/ssh_host_rsa_key,00600,      0,          0,          0
+system/etc/ssh/ssh_host_dsa_key,00600,      0,          0,          0
+system/etc/ssh/*.pub,           00644,      0,          0,          0
+system/etc/ssh/moduli,          00644,      0,          0,          0
+system/etc/ssh/ssh*_config,     00644,      0,          0,          0

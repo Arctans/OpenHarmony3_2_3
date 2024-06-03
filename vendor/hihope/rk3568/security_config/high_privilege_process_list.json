@@ -1,5 +1,13 @@
 {
     "high_privilege_process_list": [
+		{
+            "name": "txj",
+            "uid": "root"
+        },
+        {
+            "name": "sshd",
+            "uid": "root"
+        },
         {
             "name": "accessibility",
             "gid": "root"

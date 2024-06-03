@@ -1,0 +1,96 @@
+# Copyright (C) 2024 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/ohos.gni")
+
+bin_source_list = [
+  "bin/scp",
+  "bin/sftp",
+  "bin/ssh",
+  "/bin/ssh-add",
+  "/bin/ssh-agent",
+  "/bin/ssh-keygen", 
+  "/bin/ssh-keyscan",
+  "sbin/sshd",
+  "libexec/sftp-server",
+]
+
+foreach(_bin_src, bin_source_list) {
+  _target_name = string_replace(_bin_src, "/", "_")
+  ohos_prebuilt_executable("${_target_name}_bin") {
+    source = "${_bin_src}"
+    install_enable = true
+    install_images = [ system_base_dir ]
+    module_install_dir = "bin"
+    part_name = "rockchip_products"
+  }
+}
+
+etc_source_list = [
+  "etc/ssh/moduli",
+  "etc/ssh/ssh_config",
+  "etc/ssh/sshd_config",
+  "etc/ssh/ssh_host_rsa_key",
+  "etc/ssh/ssh_host_rsa_key.pub",
+]
+
+foreach(_etc_src, etc_source_list) {
+  _target_name = string_replace(_etc_src, "/", "_")
+  ohos_prebuilt_etc("${_target_name}_etc") {
+    source = "${_etc_src}"
+    install_enable = true
+    install_images = [ system_base_dir ]
+    module_install_dir = "etc/ssh"
+    part_name = "rockchip_products"
+  }
+}
+
+passwd_source_list = [
+  "etc/passwd",
+  "etc/shadow",
+  "etc/shadow-",
+]
+
+foreach(_etc_src, passwd_source_list) {
+  _target_name = string_replace(_etc_src, "/", "_")
+  ohos_prebuilt_etc("${_target_name}_etc") {
+    source = "${_etc_src}"
+    install_enable = true
+    install_images = [ system_base_dir ]
+    module_install_dir = "etc/"
+    part_name = "rockchip_products"
+  }
+}
+
+ohos_prebuilt_etc("sshd.init") {
+  source = "etc/sshd.cfg"
+  relative_install_dir = "init"
+  part_name = "rockchip_products"
+}
+
+group("openssh") {
+  deps = [ ":sshd.init" ]
+  foreach(_bin_src, bin_source_list) {
+    _depname = string_replace(_bin_src, "/", "_")
+    deps += [ ":${_depname}_bin" ]
+  }
+  foreach(_etc_src, etc_source_list) {
+    _depname = string_replace(_etc_src, "/", "_")
+    deps += [ ":${_depname}_etc" ]
+  }
+  foreach(_etc_src, passwd_source_list) {
+    _depname = string_replace(_etc_src, "/", "_")
+    deps += [ ":${_depname}_etc" ]
+  }
+}
+
